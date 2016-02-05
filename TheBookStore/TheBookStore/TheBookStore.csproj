@@ -108,6 +108,10 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Contracts\IAuthorRepository.cs" />
+    <Compile Include="Contracts\IBookRepository.cs" />
+    <Compile Include="Contracts\IReviewRepository.cs" />
+    <Compile Include="Contracts\IUnitOfWork.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -128,7 +132,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Contracts\" />
     <Folder Include="Controllers\" />
     <Folder Include="Datastores\" />
   </ItemGroup>
