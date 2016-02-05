@@ -112,6 +112,11 @@
     <Compile Include="Contracts\IBookRepository.cs" />
     <Compile Include="Contracts\IReviewRepository.cs" />
     <Compile Include="Contracts\IUnitOfWork.cs" />
+    <Compile Include="DataTransferObjects\AuthorBooksDto.cs" />
+    <Compile Include="DataTransferObjects\AuthorDto.cs" />
+    <Compile Include="DataTransferObjects\BookAuthorsDto.cs" />
+    <Compile Include="DataTransferObjects\BookDto.cs" />
+    <Compile Include="DataTransferObjects\ReviewDto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
