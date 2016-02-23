@@ -7,6 +7,7 @@ using System.Web.Http;
 using TheBookStore.Contracts;
 using TheBookStore.DataStores;
 using TheBookStore.DataTransferObjects;
+using TheBookStore.Infrastructure;
 
 namespace TheBookStore.Controllers
 {
@@ -45,7 +46,7 @@ namespace TheBookStore.Controllers
 
         }
 
-
+        [CheckNulls]
         public IHttpActionResult Get(int id)
         {
             var result = unit.Books.GetOne(id);
