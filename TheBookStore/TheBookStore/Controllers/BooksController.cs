@@ -16,9 +16,9 @@ namespace TheBookStore.Controllers
 
         private IUnitOfWork unit;
 
-        public BooksController()
+        public BooksController(IUnitOfWork unit)
         {
-            this.unit = new SampleDataStore();
+            this.unit = unit;
         }
 
 
