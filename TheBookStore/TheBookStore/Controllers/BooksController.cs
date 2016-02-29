@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.OData;
 using TheBookStore.Contracts;
 using TheBookStore.DataStores;
 using TheBookStore.DataTransferObjects;
@@ -21,7 +22,7 @@ namespace TheBookStore.Controllers
             this.unit = unit;
         }
 
-
+        [EnableQuery]
         public IHttpActionResult Get()
         {
             var books = unit.Books.All;
@@ -31,6 +32,7 @@ namespace TheBookStore.Controllers
             return Ok(response);
         }
 
+        [EnableQuery]
         public IHttpActionResult Get(string query)
         {
             var results = unit.Books.Search(query);
